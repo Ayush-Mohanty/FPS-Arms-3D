@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://birbihtmysvhy"]
+
+[ext_resource type="Script" path="res://Scenes_Scripts/enemy.gd" id="1_iluu4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v1cdy"]
+albedo_color = Color(0.562084, 0.00338918, 0.898597, 1)
+metallic = 0.6
+uv1_triplanar = true
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_5jt3k"]
+material = SubResource("StandardMaterial3D_v1cdy")
+radius = 0.25
+height = 1.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_45nyy"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_x12jf"]
+material = SubResource("StandardMaterial3D_45nyy")
+radius = 0.1
+height = 0.2
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_frg6c"]
+radius = 0.25
+height = 1.5
+
+[node name="enemy" type="CharacterBody3D"]
+script = ExtResource("1_iluu4")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_5jt3k")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0869433, 0.540795, -0.215344)
+mesh = SubResource("SphereMesh_x12jf")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0900484, 0.540795, -0.215344)
+mesh = SubResource("SphereMesh_x12jf")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_frg6c")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
