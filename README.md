@@ -1,5 +1,5 @@
 # FPS Arms 3D
- High-quality animated FPS arms, rigged and exported for use in Godot or other game engines. Includes idle, shoot, and reload animations. Ideal for prototyping or production.
+High-quality animated FPS arms, rigged and exported for use in Godot or other game engines. Includes idle, shoot, and reload animations. Ideal for prototyping or production.
 
 # FPS Arms for Godot
 
@@ -12,7 +12,6 @@ This repository provides a rigged and animated **first-person shooter (FPS) arms
 - Godot-ready `.tscn` scene for easy integration
 - Clean folder structure for quick setup
 - Compatible with custom or plug-and-play FPS controllers
-
 
 ## Getting Started
 
@@ -33,3 +32,15 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 You are free to use, modify, and distribute this asset for commercial or personal projects. Attribution is appreciated but not required.
 
 ---
+
+## Author
+
+**Ayush Mohanty**  
+GitHub: [Ayush-Mohanty](https://github.com/Ayush-Mohanty)  
+LinkedIn: [www.linkedin.com/in/ayush-mohanty-037a0a323](https://www.linkedin.com/in/ayush-mohanty-037a0a323)
+
+---
+
+## Preview
+
+ ![Image Alt](https://github.com/Ayush-Mohanty/FPS-Arms-3D/blob/e29a3a09b2bd81eb7bf85ea5b937414f46d43c96/FPS-Arms.png)
